@@ -1,12 +1,16 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Image } from "react-bootstrap";
 import Link from "next/link";
+import Logo from "../public/static/images/logo.png";
 
 const NavbarComponent = () => {
+  
   return (
     <div>
       <Navbar variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <Image src={Logo.src} width={200} height={50} />
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Link href="/">
               <span className="nav-link">Home</span>
